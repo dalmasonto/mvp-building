@@ -5,6 +5,7 @@ import "iconify-icon";
 
 
 import Navbar from "@/components/ui/navbar";
+import LandingPage from "@/components/landing/landingPage";
 import { Toaster } from "sonner";
 
 const geistSans = Geist({
@@ -37,7 +38,6 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased bg-[#0A0A0A] text-zinc-400 selection:bg-zinc-800 selection:text-zinc-200`}
       >
-        <Navbar />
         <Toaster />
         {children}
       </body>
