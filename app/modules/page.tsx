@@ -182,17 +182,17 @@ const ModulesDashboard = () => {
                                     <div className="h-14 w-14 rounded-2xl bg-zinc-900 border border-white/5 flex items-center justify-center text-zinc-300 group-hover:text-zinc-100 group-hover:scale-110 transition-all shrink-0">
                                         {item.icon}
                                     </div>
-                                    <div className="flex-1">
+                                    <div className="flex-1 min-w-0">
                                         <div className="flex items-center gap-3 mb-1">
-                                            <h3 className="text-xl font-medium text-zinc-100 tracking-tight group-hover:translate-x-1 transition-transform">{item.title}</h3>
-                                            <span className={`text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded border ${item.status === "Available" ? "border-zinc-800 text-zinc-500" : "border-orange-500/20 text-orange-200/40"
+                                            <h3 className="text-xl font-medium text-zinc-100 tracking-tight group-hover:translate-x-1 transition-transform truncate">{item.title}</h3>
+                                            <span className={`shrink-0 text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded border ${item.status === "Available" ? "border-zinc-800 text-zinc-500" : "border-orange-500/20 text-orange-200/40"
                                                 }`}>
                                                 {item.status}
                                             </span>
                                         </div>
-                                        <p className="text-sm text-zinc-500 leading-relaxed max-w-xl">{item.desc}</p>
+                                        <p className="text-sm text-zinc-500 leading-relaxed max-w-xl line-clamp-1 md:line-clamp-none">{item.desc}</p>
                                     </div>
-                                    <div className="hidden md:flex flex-col items-end gap-2 text-right">
+                                    <div className="hidden md:flex flex-col items-end gap-2 text-right shrink-0">
                                         <div className="flex items-center gap-1.5 text-xs font-medium text-zinc-600">
                                             <Clock width={12} />
                                             {item.duration}

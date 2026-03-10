@@ -2,10 +2,12 @@
 import { ArrowRight, Bolt, CodeSquare } from 'lucide-react'
 import React from 'react'
 import Link from 'next/link'
+import Navbar from '../ui/navbar'
 
 const landingPage = () => {
     return (
         <div className="bg-[#0A0A0A]">
+            <Navbar />
             {/* Hero Section */}
             <main className="pt-32 pb-24 md:pt-48 md:pb-32 px-6">
                 <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
@@ -14,7 +16,7 @@ const landingPage = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-zinc-300 opacity-75" />
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-zinc-300" />
                         </span>
-                        Enrollment Open for Cohort 1
+                        Feel free to build anything!
                     </div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-zinc-100 leading-[1.1] mb-6">
                         Execution over theory.
