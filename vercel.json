@@ -1,0 +1,14 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+        {
+            "source": "/modules",
+            "destination": "/modules"
+        },
+        {
+            "source": "/modules/(.*)",
+            "destination": "/modules/$1"
+        }
+    ]
+}
