@@ -12,7 +12,7 @@ This platform is more than just a course; it's a builder's workstation. It prior
 3. The first version should be functional, not perfect.
 4. Learn from real users immediately.
 
-## ✨ Features
+## ✨ Features 
 
 - **5 Core Modules**: A structured journey from Mindset to Team Building.
 - **Persistent Progress**: Built-in exercise tracking using **Dexie.js (IndexedDB)**. Your progress is saved locally in your browser.
